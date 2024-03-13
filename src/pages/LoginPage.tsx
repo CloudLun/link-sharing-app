@@ -23,6 +23,7 @@ type FormFields = z.infer<typeof schema>
 
 
 const LoginPage = () => {
+    const navigate = useNavigate()
 
     const { register, handleSubmit, setError, formState: { errors, isSubmitting } } = useForm<FormFields>({
         // defaultValues: {
@@ -34,8 +35,6 @@ const LoginPage = () => {
     const onSubmit: SubmitHandler<FormFields> = () => {
         navigate("/links")
     }
-
-    const navigate = useNavigate()
 
     const clickClickHandler = () => {
         navigate('/create-account')

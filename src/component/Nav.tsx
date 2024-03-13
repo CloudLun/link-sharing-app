@@ -8,7 +8,7 @@ const Nav = () => {
     const isTablet = useMediaQuery({ query: '(min-width: 768px)' })
 
     return (
-        <div className='flex justify-between items-center lg:m-6 p-6 py-1  h-[5rem] md:h-[8rem] bg-white'>
+        <div className='flex justify-between items-center lg:m-6 px-4 py-3 bg-white'>
             <div>
                 <img src={`${isTablet ? "../../public/images/logo-devlinks-large.svg" : "../../public/images/logo-devlinks-small.svg"}`} alt="" className='lg:w-[9rem] lg:h-8' />
             </div>

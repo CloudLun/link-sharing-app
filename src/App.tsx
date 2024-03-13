@@ -3,6 +3,7 @@ import './App.css'
 import LoginPage from './pages/LoginPage'
 import AccountPage from './pages/AccountPage'
 import LinksPage from './pages/LinksPage'
+import ProfilePage from './pages/ProfilePage'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' element={<LoginPage />}></Route>
           <Route path="/create-account" element={<AccountPage />}></Route>
           <Route path="/links" element={<LinksPage />}></Route>
+          <Route path="/profile" element={<ProfilePage />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
